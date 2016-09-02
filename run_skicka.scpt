@@ -20,7 +20,7 @@ end if
 --    USB Stick
 
 on processBackUp()
-  do shell script "/PATH/TO/terminal-notifier -message \"SUMIREDATA: start to Backup..\" -title \"Dev BackUp\""
+  do shell script "/PATH/TO/terminal-notifier -message \"YOUR_LOCAL_DATA: start to Backup..\" -title \"Dev BackUp\""
   do shell script "/PATH/TO/skicka upload /PATH/TO/YOUR_LOCAL_DATA /PATH_TO_YOUR_GOOGLE_DRIVE_DIRECTORY > ~/log/backuplog_`date +%Y%m%d%H%M%S`.log"
   do shell script "/PATH/TO/terminal-notifier -message \"BackUp of Microscopy is Done\" -title \"Dev BackUp\""
   
